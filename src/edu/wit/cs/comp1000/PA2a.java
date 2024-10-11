@@ -1,17 +1,19 @@
 package edu.wit.cs.comp1000;
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 //Flynn Bowler
 public class PA2a {
 	
-
+	private static final DecimalFormat df = new DecimalFormat("0.00");
+	
 	public static void main(String[] args) {
 		
 		Scanner scanner = new Scanner(System.in);
 		
 		
-		System.out.println("Enter five whole numbers:");
+		System.out.print("Enter five whole numbers: ");
 		
 		int num1 = scanner.nextInt();
 		int num2 = scanner.nextInt();
@@ -22,11 +24,11 @@ public class PA2a {
 		int sum = 0;
 		int posSum = 0;
 		int negSum = 0;
-		double avg =0;
-		double posAvg =0;
-		double negAvg =0;
-		double numOfPos = 0;
-		double numOfNeg = 0;
+		double avg = 0;
+		double posAvg = 0;
+		double negAvg = 0;
+		int numOfPos = 0;
+		int numOfNeg = 0;
 		
 		sum = num1 + num2 + num3 + num4 +num5;
 		avg = sum / 5.0;
@@ -63,14 +65,35 @@ public class PA2a {
 		numOfNeg++;}
 		
 		posAvg = posSum / (1.0 * numOfPos);
+		if (numOfPos == 0)
+			posAvg = 0.0;
 		negAvg = negSum / (1.0 * numOfNeg);
+		if (numOfNeg == 0)
+			negAvg = 0.0;
 		
-		System.out.println("The sum of the " + numOfPos + " positive numbers: " + posSum);
-		System.out.println("The sum of the " + numOfNeg + " non-positive numbers: "+ negSum);
+		if (numOfPos == 0 || numOfPos > 1) {
+			System.out.println("The sum of the " + numOfPos + " positive numbers: " + posSum);
+		} else
+			System.out.println("The sum of the " + numOfPos + " positive number: " + posSum);
+		
+		if (numOfNeg == 0 || numOfNeg > 1) {
+			System.out.println("The sum of the " + numOfNeg + " non-positive numbers: "+ negSum);
+		} else 
+			System.out.println("The sum of the " + numOfNeg + " non-positive number: "+ negSum);
+		
 		System.out.println("The sum of the 5 numbers: "+ sum);
-		System.out.println("The average of the " + numOfPos + " positive numbers: " + posAvg);
-		System.out.println("The average of the  " + numOfNeg + " non-positive numbers: " + negAvg);
-		System.out.println("The average of the 5 numbers: " + avg);
+		
+		if (numOfPos == 0 || numOfPos > 1) {
+			System.out.println("The average of the " + numOfPos + " positive numbers: " + df.format(posAvg));
+		} else
+			System.out.println("The average of the " + numOfPos + " positive number: " + df.format(posAvg));
+		
+		if (numOfNeg == 0 || numOfNeg > 1) {
+			System.out.println("The average of the " + numOfNeg + " non-positive numbers: " + df.format(negAvg));
+		} else 
+			System.out.println("The average of the " + numOfNeg + " non-positive number: " + df.format(negAvg));
+		
+		System.out.println("The average of the 5 numbers: " + df.format(avg));
 	}
 	
 	
