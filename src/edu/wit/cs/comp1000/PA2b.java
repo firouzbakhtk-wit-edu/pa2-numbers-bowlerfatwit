@@ -22,13 +22,17 @@ public class PA2b {
 			
 			System.out.print("Root: " + (-b / (2*a) ));
 			
-			System.out.print("Root: " + (-b + discriminant / (2*a) ));
-			System.out.print("Root: " + (-b - discriminant / (2*a) ));
 			
 		} else if (discriminant > 0) {
-			System.out.print("Root: " + (-b + discriminant / (2*a) ));
-			System.out.print("Root: " + (-b - discriminant / (2*a) ));
 			
+			if ((-b + Math.sqrt(discriminant)) / (2*a) > ((-b - Math.sqrt(discriminant)) / (2*a)))
+				
+				System.out.print("Root: " + (((-b - Math.sqrt(discriminant)) / (2*a) )) + " , " + ((-b + Math.sqrt(discriminant)) / (2*a) )); 
+			
+			else 
+				
+				System.out.print("Root: " + (((-b + Math.sqrt(discriminant)) / (2*a) )) + ((-b - Math.sqrt(discriminant)) / (2*a) ));
+				
 		} else if (discriminant < 0 ) {
 			System.out.print("Roots: imaginary");
 		}
