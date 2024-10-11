@@ -2,7 +2,7 @@ package edu.wit.cs.comp1000;
 
 import java.util.Scanner;
 
-
+//Flynn Bowler
 public class PA2a {
 
 	public static void main(String[] args) {

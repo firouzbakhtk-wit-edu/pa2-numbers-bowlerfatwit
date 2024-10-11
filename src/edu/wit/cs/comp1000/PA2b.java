@@ -1,11 +1,34 @@
 package edu.wit.cs.comp1000;
 
-// TODO: document this class
-public class PA2b {
+import java.util.Scanner;
 
-	// TODO: document this function
+// Flynn Bowler
+public class PA2b {
+	
+
 	public static void main(String[] args) {
-		// TODO: write your code here
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Enter a b c: ");
+		
+		double a = scanner.nextDouble();
+		double b = scanner.nextDouble();
+		double c = scanner.nextDouble();
+		
+		double discriminant = (b*b) - (4 * a * c);
+		
+		if ( discriminant == 0) {
+			
+		} else if (discriminant > 0) {
+			
+		} else if (discriminant < 0 ) {
+			System.out.print("Roots: imaginary");
+		}
+		
+		
+		
+		
 	}
 
 }
