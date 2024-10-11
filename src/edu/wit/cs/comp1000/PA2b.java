@@ -20,7 +20,14 @@ public class PA2b {
 		
 		if ( discriminant == 0) {
 			
+			System.out.print("Root: " + (-b / (2*a) ));
+			
+			System.out.print("Root: " + (-b + discriminant / (2*a) ));
+			System.out.print("Root: " + (-b - discriminant / (2*a) ));
+			
 		} else if (discriminant > 0) {
+			System.out.print("Root: " + (-b + discriminant / (2*a) ));
+			System.out.print("Root: " + (-b - discriminant / (2*a) ));
 			
 		} else if (discriminant < 0 ) {
 			System.out.print("Roots: imaginary");
