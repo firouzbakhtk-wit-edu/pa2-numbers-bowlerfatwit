@@ -4,22 +4,24 @@ import java.util.Scanner;
 
 //Flynn Bowler
 public class PA2a {
+	
 
 	public static void main(String[] args) {
 		
 		Scanner scanner = new Scanner(System.in);
 		
+		
 		System.out.println("Enter five whole numbers:");
 		
-		double num1 = scanner.nextDouble();
-		double num2 = scanner.nextDouble();
-		double num3 = scanner.nextDouble();
-		double num4 = scanner.nextDouble();
-		double num5 = scanner.nextDouble();
+		int num1 = scanner.nextInt();
+		int num2 = scanner.nextInt();
+		int num3 = scanner.nextInt();
+		int num4 = scanner.nextInt();
+		int num5 = scanner.nextInt();
 		
-		double sum = 0;
-		double posSum = 0;
-		double negSum = 0;
+		int sum = 0;
+		int posSum = 0;
+		int negSum = 0;
 		double avg =0;
 		double posAvg =0;
 		double negAvg =0;
