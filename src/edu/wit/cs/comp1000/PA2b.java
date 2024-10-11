@@ -30,11 +30,11 @@ public class PA2b {
 			
 			if ((-b + Math.sqrt(discriminant)) / (2*a) > ((-b - Math.sqrt(discriminant)) / (2*a)))
 				
-				System.out.print("Roots: " + (df.format((-b - Math.sqrt(discriminant)) / (2*a) )) + " , " + df.format((-b + Math.sqrt(discriminant)) / (2*a) )); 
+				System.out.print("Roots: " + (df.format((-b - Math.sqrt(discriminant)) / (2*a) )) + ", " + df.format((-b + Math.sqrt(discriminant)) / (2*a) )); 
 			
 			else 
 				
-				System.out.print("Roots: " + (df.format((-b + Math.sqrt(discriminant)) / (2*a) )) + df.format((-b - Math.sqrt(discriminant)) / (2*a) ));
+				System.out.print("Roots: " + (df.format((-b + Math.sqrt(discriminant)) / (2*a) )) + ", " + df.format((-b - Math.sqrt(discriminant)) / (2*a) ));
 				
 		} else if (discriminant < 0 ) {
 			System.out.print("Roots: imaginary");
