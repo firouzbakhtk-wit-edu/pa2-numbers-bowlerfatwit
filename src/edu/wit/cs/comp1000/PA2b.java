@@ -13,7 +13,7 @@ public class PA2b {
 		Scanner scanner = new Scanner(System.in);
 		
 		
-		System.out.println("Enter a b c: ");
+		System.out.print("Enter a b c: ");
 		
 		double a = scanner.nextDouble();
 		double b = scanner.nextDouble();
